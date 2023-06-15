@@ -1,0 +1,6 @@
+<h1>Here the <%= @list.name %> list you have choose</h1>
+<% @list.movies.each do |movie| %>
+<%= @movie.title %>
+<% end %>
+<%= link_to "Back to your lists", lists_path %>
+<%= link_to "Back to home", root_path %>

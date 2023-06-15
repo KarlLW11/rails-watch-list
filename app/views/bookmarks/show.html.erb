@@ -1,0 +1,6 @@
+<h1>Here the <%= @bookmaker.list_id %> bookmaker you have choose</h1>
+<% @list.movies.each do |movie| %>
+<%= @movie.title %>
+<% end %>
+<%= link_to "Back to your lists", list_bookmakers_path %>
+<%= link_to "Back to home", root_path %>

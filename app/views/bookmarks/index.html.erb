@@ -1,0 +1,9 @@
+<h1>Lists of bookmaker :</h1>
+<ol>
+  <% @bookmakers.each do |bookmaker| %>
+    <li><%= link_to bookmaker, bookmaker_path(bookmaker) %></li>
+  <% end %>
+</ol>
+<%= link_to "Create a new bookmaker", new_list_bookmaker_path %>
+<li>
+<%= link_to "Back to home", root_path %>
