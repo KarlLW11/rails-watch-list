@@ -1,7 +1,7 @@
 <h1>Here the <%= @list.name %> list you have choose</h1>
 <%= cl_image_tag @list.photo.key, height: 300, width: 400, crop: :fill %>
 <% @list.movies.each do |movie| %>
-<%= @movie.title %>
+<%= movie.title %>
 <% end %>
 <li>
 <%= link_to "Back to your lists", lists_path %>
